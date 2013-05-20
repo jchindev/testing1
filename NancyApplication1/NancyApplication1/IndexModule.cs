@@ -6,7 +6,7 @@
     {
         public IndexModule()
         {
-            //comment
+            //comments
             Get["/"] = parameters =>
             {
                 return View["index"];
