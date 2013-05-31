@@ -1,20 +1,360 @@
-﻿<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>NancyApplication1</title>
+﻿@inherits TT.Web.Core.TTRazorViewBase<dynamic>
+@{
+    Layout = "Shared/_layout.cshtml";
+}
 
-	<style type="text/css">
+<div class="container" id="wrapper">
+            <div class="row">
+                <div class="span4">
+                    <div id="header">
+                        <div id="logo">
+                            <h1>
+                                <a href="index.html"><img class="logo-home" src="/Content/images/LogoColorNoText.jpeg" />Tennis Trooper</a>
+                            </h1>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="span8">
+                    <div id="ads-top">
+                        <a href="#"><img src="http://placehold.it/468x60" class="pull-right"></a>
+                    </div>
+                </div>
+            </div>
 
-		body {
-			text-align: center;
-		}
+            <!-- Start Navigation -->
+            <div class="row">
+                <div class="span12">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container" style="width: auto;">
+                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </a>
+                                <div class="nav-collapse">
+                                    <ul class="nav">
+                                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="categories.html">Chickens</a></li>
+                                        <li><a href="categories.html">Meats</a></li>
+                                        <li><a href="categories.html">Drinks</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Menu <b class="caret"></b></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Dropdown 1</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Dropdown 2</a></li>
 
-	</style>
+                                            </ul>
+                                        </li>
 
-</head>
-<body>
-	<img src="~/Content/nancy-logo.png" alt="Nancy logo" /><br />
-	This view was rendered using the Nancy Razor view engine
-</body>
-</html>
+                                    </ul>
+                                    <ul class="nav  pull-right">
+                                        <li class="divider-vertical"></li>
+                                        <li>
+                                            <form action="" class="navbar-search">                                                       
+                                                <input class="search-query  span2" placeholder="type a keyword" name="q" type="text">
+                                            </form>                      
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Navigation -->
+
+            <div class="row">
+                <div class="span8">
+                    <div class="row">
+                        <div class="span8">
+                            <div class="slider-box">
+                                <div id="myCarousel" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="item">
+                                            <img alt="" src="asset/img/1.jpg">
+                                            <div class="carousel-caption">
+                                                <h4>First Thumbnail label</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud. </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="item active">
+                                            <img alt="" src="asset/img/2.jpg">
+                                            <div class="carousel-caption">
+                                                <h4>Second Thumbnail label</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud. </p>
+                                            </div>
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span2">
+                            <h4 class="box-title"><span class="orange-box-title">Guest</span> <span class="green-box-title">Recipes</span></h4>
+                            <img src="asset/img/thumb-1-madang.jpg">
+                            <a href="detail.html"><h4>Resep Sup: Sup Gyuniku</h4></a>
+                            <p>
+                                Pellentesque eu velit at mauris tinc feugiat eget ut lorem. Pellentesque sollicitudin sodales diam.
+
+                            </p>
+                            <span class="green"><strong>Previous</strong></span>
+                            <ul class="previous-list">
+                                <li><a href="detail.html">Resep Tahu: Asinan Tahu</a></li>
+                                <li><a href="detail.html">Resep Sayuran: Tumis Tauge Renyah</a></li>
+                                <li><a href="detail.html">Resep Sup : Sup Pangsit Ayam</a></li>
+                            </ul>
+                            <a href="#" class="btn btn-mini btn-success">Send your recipes</a>
+                            <br>
+                            <br>
+                            <h4 class="box-title"><span class="orange-box-title">Top</span> <span class="green-box-title">Recipes</span></h4>
+                            <img src="asset/img/thumb-3-madang.jpg">
+                            <a href="detail.html"><h4>Resep Sup: Sup Gyuniku</h4></a>
+                            <p>
+                                Pellentesque eu velit at mauris tinc feugiat eget ut lorem. Pellentesque sollicitudin sodales diam.
+
+                            </p>
+                            <span class="green"><strong>Previous</strong></span>
+                            <ul class="previous-list">
+                                <li><a href="detail.html">Resep Tahu: Asinan Tahu</a></li>
+                                <li><a href="detail.html">Resep Sayuran: Tumis Tauge Renyah</a></li>
+                                <li><a href="detail.html">Resep Sup : Sup Pangsit Ayam</a></li>
+                            </ul>
+
+                            <br>
+
+                        </div>
+                        <div class="span6 middle-content">
+                            <div class="current-post">
+                                <h4 class="box-title"><span class="orange-box-title">Todays</span> <span class="green-box-title">Recipes</span></h4>
+                                <span class="post-attr">Posted by: <strong>demouser</strong> | Posted on: <strong>April 6th, 2011</strong> | <a href="single.html">12 Comments</a></span>
+                                <a href="detail.html"><h3>Chicken : <i>Crispy BBQ Chicken Wings</i></h3></a>
+                                <img src="asset/img/thumb-2-madang.jpg">
+                                <p>
+                                    Pellentesque eu velit at mauris tinc feugiat eget ut lorem. Pellentesque sollicitudin sodales diam.
+
+                                    Suspendisse semper, tortor et lobortis mattis, turpis lacus placerat tortor, quis convallis metus mi vitae quam.
+
+                                    Pellentesque eu velit at mauris tinc feugiat eget ut lorem at dignissim dui ligula eu tellus. &nbsp;<a href="detail.html">more detail</a>
+                                </p>
+                            </div>
+                            <br>
+                            <ul class="thumbnails previous-recipes">
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-4-madang.jpg">
+                                        Resep Sayuran: Ca Kailan Daging Pedas 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-5-madang.jpg">
+                                        Resep Seafood: Black Pepper Salmon dan Salad Apel 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-6-madang.jpg">
+                                        Resep Seafood: Pangsit Udang Goreng 
+                                    </a>
+
+                                </li>
+                            </ul>
+
+                            <h4 class="box-title"><span class="orange-box-title">Recipes</span> <span class="green-box-title">Collections</span></h4>
+                            <ul class="thumbnails recipes-collections">
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-7-madang.jpg">
+                                        <strong>Chicken</strong> 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-8-madang.jpg">
+                                        <strong>Meat</strong> 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-9-madang.jpg">
+                                        <strong>Cake</strong> 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-10-madang.jpg">
+                                        <strong>Drinks</strong> 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-11-madang.jpg">
+                                        <strong>Rice</strong> 
+                                    </a>
+
+                                </li>
+                                <li class="span2">
+                                    <a href="detail.html">
+                                        <img src="asset/img/thumb-12-madang.jpg">
+                                        <strong>Vegetables</strong> 
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8">
+                            <div class="box">
+                                <h4 class="box-title"><span class="orange-box-title">Facebook</span> <span class="green-box-title">Fan Page</span></h4>
+                                <div class="fb-like-box fb_iframe_widget" data-href="http://www.facebook.com/platform" data-width="600" data-show-faces="true" data-stream="false" data-header="true" fb-xfbml-state="rendered"><span style="height: 290px; width: 600px;">
+                                    <iframe id="f8deb793c" name="f29699d7cc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="http://www.facebook.com/plugins/likebox.php?api_key=231423830293736&amp;locale=en_US&amp;sdk=joey&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df7d5b138%26origin%3Dhttp%253A%252F%252Fwbpreview.com%252Ff17ae3d5bc%26domain%3Dwbpreview.com%26relation%3Dparent.parent&amp;height=290&amp;header=true&amp;show_faces=true&amp;stream=false&amp;width=600&amp;href=http%3A%2F%2Fwww.facebook.com%2Fplatform&amp;colorscheme=light&amp;show_border=true" style="border: none; overflow: hidden; height: 290px; width: 600px;"></iframe>
+                                </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span4">
+                    <div class="box">
+                        <h4 class="box-title"><span class="orange-box-title">Recipes</span> <span class="green-box-title">Galleries</span></h4>
+                        <img src="asset/img/medium-1-madang.jpg">
+                        <a href="galery_detail.html"><h3>Mushroom Croquette dan Country Fried Steak</h3></a>
+                        <a href="#" class="btn btn-mini btn-success">Send Photo</a>
+                    </div>
+                    <div class="box green-gradient-box tab-widget">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#1" data-toggle="tab"><i class="icon-star"></i>&nbsp;Popular</a></li>
+                            <li><a href="#2" data-toggle="tab"><i class="icon-comment"></i>&nbsp;Comments</a></li>
+                            <li><a href="#3" data-toggle="tab"><i class="icon-tags"></i>&nbsp;Tags</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="1">
+                                <ul class="popular">
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Seafood: Pangsit Udang Goreng </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Seafood: Black Pepper Salmon dan Salad Apel  </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Sayuran: Ca Kailan Daging Pedas  </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane" id="2">
+                                <ul class="popular">
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Seafood: Black Pepper Salmon dan Salad Apel  </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Seafood: Pangsit Udang Goreng </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="detail.html"><h4>Resep Sayuran: Ca Kailan Daging Pedas  </h4></a>
+                                        <span class="post-attr">Posted on July 02, 2011 20:30 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" id="3">
+                                <ul class="tags">
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Chickens</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Drinks</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Meats</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Vegetables</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Fried</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Fruits</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Cake</a></li>
+                                    <li><a class="btn" href="#"><i class="icon-tag"></i>Sea Food</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box green-gradient-box tips">
+                        <h4 class="box-title"><span class="orange-box-title">Tips</span> <span class="green-box-title">Today</span></h4>
+                        <a href="#"><h3>Memilih Merica Hitam </h3></a>
+                        <img src="asset/img/thumb-1-madang.jpg">
+                        <p>
+                            Pellentesque eu velit at mauris tinc feugiat eget ut lorem. Pellentesque sollicitudin sodales diam.
+
+                            Suspendisse semper, tortor et lobortis mattis, turpis lacus placerat tortor, quis convallis metus mi vitae quam.
+
+                            Pellentesque eu velit at mauris tinc feugiat eget ut lorem at dignissim dui ligula eu tellus. &nbsp;<a href="detail.html">more detail</a>
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h4 class="box-title"><span class="orange-box-title">recipes</span> <span class="green-box-title">Categories</span></h4>
+                        <ul class="popular">
+                            <li>
+                                <a href="detail.html">Chickens  </a>
+
+                            </li>
+                            <li>
+                                <a href="detail.html">Sea Food </a>
+
+                            </li>
+
+                            <li>
+                                <a href="detail.html">Vegetables  </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box orange-gradient-box">
+                        <h4 class="box-title"><span class="orange-box-title">subscribe</span> <span class="green-box-title">Our Recipes</span></h4>
+                        <form>
+                            <div class="input-prepend">
+                                <span class="add-on">_</span><input class="hotdeals-form" id="prependedInput" size="16" type="text" placeholder="Email">
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <button type="submit" class="btn btn-success">Sign up newsletter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="span12">
+                    <div id="copyright" class="pull-left"> © 2012 Mampir Madang. All rights reserved. </div>
+                    <ul class="social_media pull-right">
+                        <li><a rel="tooltip" href="#" class="twitter" data-original-title="Twitter"></a></li>
+                        <li><a rel="tooltip" href="#" class="facebook" data-original-title="Facebook"></a></li>
+                        <li><a rel="tooltip" href="#" class="yahoo" data-original-title="Yahoo"></a></li>
+                        <li><a rel="tooltip" href="#" class="flickr" data-original-title="Flicker"></a></li>
+                        <li><a rel="tooltip" href="#" class="gplus" data-original-title="Google Plus"></a></li>
+                        <li><a rel="tooltip" href="#" class="blogger" data-original-title="Blogger"></a></li>
+                        <li><a rel="tooltip" href="#" class="rss" data-original-title="RSS"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>

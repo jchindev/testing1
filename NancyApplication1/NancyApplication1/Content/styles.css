@@ -1,0 +1,330 @@
+﻿body {
+}
+/* 
+    Document   : general
+    Created on : Sep 8, 2012, 11:41:25 AM
+    Author     : gieart
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: -moz-linear-gradient(center top , #357F0F, #FFFFFF) repeat scroll 0 0 transparent;
+    color: #747474;
+    font-family: arial,helvetica,verdana;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+
+}
+
+a, a:visited {
+    color: #357F0F;
+}
+
+a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+.orange{
+    color: #FF6600;
+}
+
+.green{
+    color:#357F0F;
+}
+h2, h3, h4 {
+    font-family: Georgia,Times,Roman;
+    font-weight: normal;
+    text-shadow: 0 1px 1px #AAAAAA;
+}
+
+h2.title{
+    color: #FF6600;
+}
+
+h3{
+    line-height: 25px;
+}
+
+h2.title{
+    color: #FF6600;
+    font-size: 30px;
+    line-height: normal;
+    padding: 5px 0 0;
+}
+
+#wrapper{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: medium none;
+    border-top: 3px solid #F5862D;
+    border-bottom: 3px solid #9A9A9A;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+#header {
+    float: left;
+    padding: 22px 0 38px;
+    width: 100%;
+}
+
+#ads-top{
+    float: right;
+    padding: 22px 0 0;
+    width: 100%;
+}
+
+#logo .desc {
+    color: #999999;
+}
+
+#logo h1{
+    font-size: 25px;
+    line-height: 20px;
+    font-family: Georgia,Times,Roman;
+    text-shadow: 1px 0 1px #AAAAAA;
+}
+
+.box{
+    border: 1px solid #DFE8D6;
+    margin: 0 0 15px;
+    padding: 10px 15px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.share-button-box{
+    border: 1px dashed #DFE8D6;
+    margin: 0 0 15px;
+    padding: 10px 15px;
+    border-radius: 3px 3px 3px 3px;
+}
+.green-gradient-box{
+    background: -moz-linear-gradient(center top , #F1F7EC, #FFFFFF) repeat scroll 0 0 transparent;
+}
+
+.orange-gradient-box{
+    background: -moz-linear-gradient(center top , #FFA900, #FFDD00) repeat scroll 0 0 transparent;
+}
+
+.yellow-gradient-box{
+    background: -moz-linear-gradient(center top , #B7DF2D 0%, #D7F477 44%, #FCF888 100%) repeat scroll 0 0 transparent;
+}
+
+.slider-box{
+    background-color: #8FC00C;
+    border: 2px solid #8AB90E;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 4px #CCCCCC;
+}
+
+
+
+.carousel{
+    margin: 0;
+}
+
+.orange-box-title{
+    color: #FF6600;
+    font-size: 16px;
+}
+
+.green-box-title{
+    color: #357F0F;
+    font-size: 25px;
+}
+
+.box-title{
+    border-bottom: 1px dashed #DFE8D6;
+    padding-bottom: 10px;
+}
+
+.post-attr{
+    color: #999999;
+    font-size: 11px;
+}
+
+img:hover{
+    opacity: 0.6;
+}
+
+.current-post img{
+    float: left;
+    margin-right: 10px;
+}
+
+.previous-list{
+    margin-top: 5px;
+    list-style: none;
+    margin-left: 0;
+    font-size: 10px;
+}
+
+.previous-list li{
+    border-bottom: 1px #CCCCCC dotted;
+    margin-bottom: 10px;
+    line-height: 15px;
+}
+
+.previous-list li a{
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.previous-list li a:hover{
+    color: #999;
+}
+
+.previous-recipes{
+    font-size: 11px;
+}
+
+.previous-recipes li img{
+    padding: 3px;
+    border: 1px solid #CCC;
+}
+
+.previous-recipes li a{
+    color: #FF6600;
+}
+
+.previous-recipes li a:hover{
+    color: #999;
+}
+
+
+.recipes-collections li img{
+    padding: 3px;
+    border: 1px solid #CCC;
+}
+
+.recipes-collections li a{
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.recipes-collections li a:hover{
+    color: #999;
+}
+
+.tab-widget{
+    font-size: 12px;
+}
+
+.popular{
+    margin-top: 5px;
+    list-style: none;
+    margin-left: 0;
+
+}
+
+.popular li{
+    border-bottom: 1px #CCCCCC dotted;
+    margin-bottom: 10px;
+
+}
+
+.popular li a{
+    color: #FF6600;
+}
+
+.popular li a:hover{
+    color: #999;
+}
+
+.tags{
+    list-style: none;
+}
+
+.tags li{
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.tips img{
+    float: left;
+    margin-right: 10px;
+}
+
+ul.social_media { position:relative; overflow:hidden; margin:0px 0px 5px; padding:0px; list-style:none }
+ul.social_media li { margin:0px 3px 3px 0px; width:32px; height:32px; float: left }
+ul.social_media li a { width:32px; height:32px; display:block; padding:0px; background:url(../img/social_media_icon.png) 0px 0px no-repeat; opacity: 0.3 }
+ul.social_media li a:hover { width:32px; height:32px; display:block; padding:0px; background:url(../img/social_media_icon.png) 0px 0px no-repeat; opacity: 1}
+ul.social_media li a.twitter { background-position: 0px 0px }
+ul.social_media li a.facebook { background-position: -40px 0px }
+ul.social_media li a.in { background-position: -80px 0px }
+ul.social_media li a.gplus { background-position: -120px 0px }
+ul.social_media li a.dribble { background-position: -160px 0px }
+ul.social_media li a.forrst { background-position: -200px 0px }
+ul.social_media li a.flickr { background-position: -240px 0px }
+ul.social_media li a.deviant { background-position: -280px 0px }
+ul.social_media li a.blogger { background-position: -320px 0px }
+ul.social_media li a.del { background-position: -360px 0px }
+ul.social_media li a.vimeo { background-position: -400px 0px }
+ul.social_media li a.utube { background-position: -440px 0px }
+ul.social_media li a.rss { background-position: -480px 0px }
+ul.social_media li a.pint { background-position: -520px 0px }
+ul.social_media li a.skype { background-position: -560px 0px }
+ul.social_media li a.yahoo { background-position: -600px 0px }
+ul.social_media li a.netvibes { background-position: -640px 0px }
+
+.about img{
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.team-work img{
+    margin-top: 15px;
+}
+
+.also-read{
+    list-style: square;
+    margin-left: 10px;
+}
+
+ul.share-button-set li a{
+    opacity: 1;
+}
+
+/*--Comments*/
+
+.comments{
+    list-style: none outside;
+    margin-left: 0;
+}
+.avatar{
+    height: 35px;
+
+}
+.avatar img{
+    float: left;
+    margin-right: 10px;
+}
+
+.comments-message{
+
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.visitor{
+    background: -moz-linear-gradient(center top , #F1F7EC, #FFFFFF) repeat scroll 0 0 transparent;
+}
+
+.admin{
+    background-color: #DFF0D8;
+}
+
+.bullet{
+    list-style: square;
+}
+
+.numbered{
+    list-style: decimal;
+}

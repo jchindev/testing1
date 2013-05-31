@@ -1,4 +1,4 @@
-﻿namespace NancyApplication1
+﻿namespace TT.Web.Modules
 {
     using Nancy;
 
