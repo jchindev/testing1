@@ -14,7 +14,7 @@
             {
                 var vids = new Videos();
                 var testVid = new VideoDto { Angle = "front", Description = "awesome winner", Player = "Federer", Stroke = "forehand", YoutubeId = "asdfsnyew2" };
-               // vids.AddVideo(testVid);
+                vids.AddVideo(testVid);
 
 
                 List<VideoDto> lstVids = vids.GetAll();
