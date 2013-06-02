@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1CF02F
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT.Data", "TT.Data\TT.Data.csproj", "{62F15D5F-D2CA-4A87-BC14-479D4F9FEBFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT.BizLogic", "TT.BizLogic\TT.BizLogic.csproj", "{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{B4F9C525-5C56-440E-B4C2-972A33D7C8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4F9C525-5C56-440E-B4C2-972A33D7C8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4F9C525-5C56-440E-B4C2-972A33D7C8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F15D5F-D2CA-4A87-BC14-479D4F9FEBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F15D5F-D2CA-4A87-BC14-479D4F9FEBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F15D5F-D2CA-4A87-BC14-479D4F9FEBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F15D5F-D2CA-4A87-BC14-479D4F9FEBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
