@@ -1,4 +1,5 @@
-﻿@inherits TT.Web.Core.TTRazorViewBase<dynamic>
+﻿@using TT.Web.ViewModels;
+@inherits TT.Web.Core.TTRazorViewBase<BaseViewModel>
 @{
     Layout = "Shared/_layout.cshtml";
 }
@@ -140,19 +141,7 @@
 
                         </div>
                         <div class="span6 middle-content">
-                            <div class="current-post">
-                                <h4 class="box-title"><span class="orange-box-title">Todays</span> <span class="green-box-title">Recipes</span></h4>
-                                <span class="post-attr">Posted by: <strong>demouser</strong> | Posted on: <strong>April 6th, 2011</strong> | <a href="single.html">12 Comments</a></span>
-                                <a href="detail.html"><h3>Chicken : <i>Crispy BBQ Chicken Wings</i></h3></a>
-                                <img src="asset/img/thumb-2-madang.jpg">
-                                <p>
-                                    Pellentesque eu velit at mauris tinc feugiat eget ut lorem. Pellentesque sollicitudin sodales diam.
-
-                                    Suspendisse semper, tortor et lobortis mattis, turpis lacus placerat tortor, quis convallis metus mi vitae quam.
-
-                                    Pellentesque eu velit at mauris tinc feugiat eget ut lorem at dignissim dui ligula eu tellus. &nbsp;<a href="detail.html">more detail</a>
-                                </p>
-                            </div>
+                           @Html.Partial("Shared/_currentPost.cshtml", Model)
                             <br>
                             <ul class="thumbnails previous-recipes">
                                 <li class="span2">

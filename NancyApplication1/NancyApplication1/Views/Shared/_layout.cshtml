@@ -1,16 +1,19 @@
 ﻿@inherits TT.Web.Core.TTRazorViewBase<dynamic>
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp" >
 <head>
     <meta charset="utf-8">
     <title>Tennis Trooper</title>
     
     @RenderBundleStyle("~/bundles/css")
+    @RenderBundleScript("~/bundles/js")
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.js"></script>
+
     @RenderSection("Header", false)
 </head>
 <body>
     <div id="body">@RenderBody()</div>
-    @RenderBundleScript("~/bundles/js")
     <div id="footer">@RenderSection("Footer", false)</div>
     <div id="optional">@RenderSection("Optional", false)</div></body>
 </html>

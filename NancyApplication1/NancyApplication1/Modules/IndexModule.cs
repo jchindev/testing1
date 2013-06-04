@@ -4,6 +4,8 @@
     using Nancy;
     using TT.BizLogic;
     using TT.BizLogic.Dto;
+    using TT.Web.ViewModels;
+    using System.Configuration;
 
     public class IndexModule : NancyModule
     {
@@ -14,12 +16,16 @@
             {
                 var vids = new Videos();
                 var testVid = new VideoDto { Angle = "front", Description = "awesome winner", Player = "Federer", Stroke = "forehand", YoutubeId = "asdfsnyew2" };
-                vids.AddVideo(testVid);
+                //vids.AddVideo(testVid);
 
 
-                List<VideoDto> lstVids = vids.GetAll();
+                //List<VideoDto> lstVids = vids.GetAll();
 
-                return View["index"];
+                var baseViewModel = new BaseViewModel();
+                baseViewModel.BlogBaseURl = ConfigurationManager.AppSettings["BlogEngineBaseUrl"];
+
+
+                return View["index", baseViewModel];
             };
         }
     }
