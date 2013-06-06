@@ -1,0 +1,25 @@
+﻿@using TT.Web.ViewModels;
+@inherits TT.Web.Core.TTRazorViewBase<BaseViewModel>
+<div class="box" ng-controller="NewsController">
+    <h4 class="box-title"><span class="orange-box-title">Latest</span> <span class="green-box-title">News</span></h4>
+        <ul class="popular">
+            <li ng-repeat="headline in headlines">
+                <a href="{{headline.links.web.href}}">
+                    <h4>{{headline.title}}</h4>
+                </a>
+                <span class="post-attr">Posted on {{headline.published}}</span>
+            </li>
+        </ul>
+</div>
+<script type="text/javascript">
+    function NewsController($scope, $http) {
+
+        $http.jsonp('http://api.espn.com/v1/sports/tennis/news/headlines?apikey=rxhm9zwh5yad3psw7nj8b33a&callback=JSON_CALLBACK').success(function (data) {
+            for (var i in data.headlines) {
+                data.headlines[i].published = moment(data.headlines[i].published).format('MMMM Do YYYY, h:mm:ss a');
+            }
+
+            $scope.headlines = data.headlines;
+        });
+    };
+</script>

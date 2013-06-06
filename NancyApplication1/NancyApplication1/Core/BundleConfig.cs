@@ -19,7 +19,8 @@ namespace TT.Web.Core
             var js = new ScriptBundle("~/bundles/js").Include(
                  "~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.js",
-                "~/Scripts/less.min.js"
+                "~/Scripts/less.min.js",
+                "~/Scripts/moment.js"
                 );
 
             js.Transforms.Add(jsTransformer);

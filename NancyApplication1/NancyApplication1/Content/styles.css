@@ -328,3 +328,9 @@ ul.share-button-set li a{
 .numbered{
     list-style: decimal;
 }
+
+/*custom*/
+.nav li:hover
+{
+    background-color:#e5e5e5;
+}
