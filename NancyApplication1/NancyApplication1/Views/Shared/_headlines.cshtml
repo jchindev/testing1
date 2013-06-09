@@ -1,5 +1,5 @@
 ﻿@using TT.Web.ViewModels;
-@inherits TT.Web.Core.TTRazorViewBase<BaseViewModel>
+@inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
 <div class="box" ng-controller="NewsController">
     <h4 class="box-title"><span class="orange-box-title">Latest</span> <span class="green-box-title">News</span></h4>
         <ul class="popular">
@@ -14,8 +14,13 @@
 </div>
 <script type="text/javascript">
     function NewsController($scope, $http) {
+        var url = '@Model.EspnNewsURl';
+        var method = "jsonp";
+        if (url.indexOf('callback') < 0) {
+            method = "get";
+        }
 
-        $http.jsonp('http://api.espn.com/v1/sports/tennis/news/headlines?apikey=rxhm9zwh5yad3psw7nj8b33a&callback=JSON_CALLBACK').success(function (data) {
+        $http[method](url).success(function (data) {
             for (var i in data.headlines) {
                 data.headlines[i].published = moment(data.headlines[i].published).format('MMMM Do YYYY, h:mm:ss a');
 
@@ -27,5 +32,6 @@
 
             $scope.headlines = data.headlines;
         });
+
     };
 </script>

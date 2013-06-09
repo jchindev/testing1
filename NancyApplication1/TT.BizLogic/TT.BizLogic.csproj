@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TT.BizLogic</RootNamespace>
     <AssemblyName>TT.BizLogic</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dto\VideoDto.cs" />
+    <Compile Include="ValueLookUp.cs" />
+    <Compile Include="Dto\ValueLookUpDto.cs" />
     <Compile Include="Dto\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BaseBizObject.cs" />

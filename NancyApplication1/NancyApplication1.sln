@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT.Data", "TT.Data\TT.Data.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT.BizLogic", "TT.BizLogic\TT.BizLogic.csproj", "{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{047449AC-FED4-4070-B11E-389E6532F849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.LightningCache", "..\..\..\Users\joe\Documents\GitHub\Nancy.LightningCache\Nancy.LightningCache\Nancy.LightningCache.csproj", "{FDE0905B-F713-478C-83BC-9872631758FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA81FD74-CFB4-442E-B25C-DC5D9871CA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047449AC-FED4-4070-B11E-389E6532F849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047449AC-FED4-4070-B11E-389E6532F849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047449AC-FED4-4070-B11E-389E6532F849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047449AC-FED4-4070-B11E-389E6532F849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE0905B-F713-478C-83BC-9872631758FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE0905B-F713-478C-83BC-9872631758FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE0905B-F713-478C-83BC-9872631758FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE0905B-F713-478C-83BC-9872631758FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

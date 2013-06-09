@@ -6,6 +6,9 @@
     using TT.BizLogic.Dto;
     using TT.Web.ViewModels;
     using System.Configuration;
+    using Common;
+    using Nancy.LightningCache.Extensions;
+    using System;
 
     public class IndexModule : NancyModule
     {
@@ -14,18 +17,29 @@
             //commentss
             Get["/"] = parameters =>
             {
-                var vids = new Videos();
-                var testVid = new VideoDto { Angle = "front", Description = "awesome winner", Player = "Federer", Stroke = "forehand", YoutubeId = "asdfsnyew2" };
+                //var vids = new Videos();
+                //var testVid = new VideoDto { Angle = "front", Description = "awesome winner", Player = "Federer", Stroke = "forehand", YoutubeId = "asdfsnyew2" };
                 //vids.AddVideo(testVid);
 
 
                 //List<VideoDto> lstVids = vids.GetAll();
+                var newsMode = new ValueLookUp().Get("EspnNewsMode");
 
-                var baseViewModel = new BaseViewModel();
-                baseViewModel.BlogBaseURl = ConfigurationManager.AppSettings["BlogEngineBaseUrl"];
+                var viewModel = new IndexViewModel();
+                viewModel.BlogBaseURl = AppSetting.BlogEngineBaseUrl;
 
+                if (newsMode == "server")
+                {
+                    viewModel.EspnNewsURl = "/services/news";
+                }
+                else
+	            {
+                    string clientOnlyUrl = string.Format("{0}?apikey={1}&callback=JSON_CALLBACK", AppSetting.EspnHeadlinesUrl, AppSetting.EspnApiKey);
+                    viewModel.EspnNewsURl = clientOnlyUrl;
 
-                return View["index", baseViewModel];
+	            }
+
+                return View["index", viewModel].AsCacheable(DateTime.Now.AddSeconds(30));
             };
         }
     }

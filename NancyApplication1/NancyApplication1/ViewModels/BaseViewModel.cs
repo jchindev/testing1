@@ -7,6 +7,5 @@ namespace TT.Web.ViewModels
 {
     public class BaseViewModel
     {
-        public string BlogBaseURl { get; set; }
     }
 }

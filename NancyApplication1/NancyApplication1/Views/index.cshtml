@@ -1,5 +1,5 @@
 ﻿@using TT.Web.ViewModels;
-@inherits TT.Web.Core.TTRazorViewBase<BaseViewModel>
+@inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
 @{
     Layout = "Shared/_layout.cshtml";
 }
@@ -232,7 +232,7 @@
                         <a href="galery_detail.html"><h3>Mushroom Croquette dan Country Fried Steak</h3></a>
                         <a href="#" class="btn btn-mini btn-success">Send Photo</a>
                     </div>
-                    @Html.Partial("Shared/_headlines.cshtml",null)
+                    @Html.Partial("Shared/_headlines.cshtml", Model)
                     <div class="box green-gradient-box tab-widget">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#1" data-toggle="tab"><i class="icon-star"></i>&nbsp;Popular</a></li>
