@@ -186,13 +186,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Users\joe\Documents\GitHub\Nancy.LightningCache\Nancy.LightningCache\Nancy.LightningCache.csproj">
-      <Project>{fde0905b-f713-478c-83bc-9872631758fe}</Project>
-      <Name>Nancy.LightningCache</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{047449ac-fed4-4070-b11e-389e6532f849}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nancy.LightningCache\Nancy.LightningCache.csproj">
+      <Project>{fde0905b-f713-478c-83bc-9872631758fe}</Project>
+      <Name>Nancy.LightningCache</Name>
     </ProjectReference>
     <ProjectReference Include="..\TT.BizLogic\TT.BizLogic.csproj">
       <Project>{aa81fd74-cfb4-442e-b25c-dc5d9871ca8b}</Project>
