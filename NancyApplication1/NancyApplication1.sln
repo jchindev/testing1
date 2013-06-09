@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TT.BizLogic", "TT.BizLogic\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{047449AC-FED4-4070-B11E-389E6532F849}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.LightningCache", "..\..\..\Users\joe\Documents\GitHub\Nancy.LightningCache\Nancy.LightningCache\Nancy.LightningCache.csproj", "{FDE0905B-F713-478C-83BC-9872631758FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nancy.LightningCache", "Nancy.LightningCache\Nancy.LightningCache.csproj", "{FDE0905B-F713-478C-83BC-9872631758FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
