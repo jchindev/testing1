@@ -20,7 +20,8 @@ namespace TT.Web.Core
                  "~/Scripts/jquery-{version}.js",
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/less.min.js",
-                "~/Scripts/moment.js"
+                "~/Scripts/moment.js",
+                "~/Scripts/main.js"
                 );
 
             js.Transforms.Add(jsTransformer);

@@ -1,0 +1,28 @@
+﻿@using TT.Web.ViewModels;
+@inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
+<div class="row">
+    <div class="span8">
+        <div class="slider-box">
+            <div id="myCarousel" class="carousel slide">                    
+                <div class="carousel-inner">
+                @foreach (var vid in Model.VideoResults)
+                {
+                    string isActive = "";
+                    if (vid == Model.VideoResults[0])
+                    {
+                        isActive = "active";   
+                    }
+                    <div class="item @isActive">
+                        <iframe src="@vid.MediaUrl" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                }
+
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+        </div>
+    </div>
+</div>

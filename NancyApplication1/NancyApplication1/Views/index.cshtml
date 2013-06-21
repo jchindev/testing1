@@ -71,40 +71,7 @@
 
             <div class="row">
                 <div class="span8">
-                    <div class="row">
-                        <div class="span8">
-                            <div class="slider-box">
-                                <div id="myCarousel" class="carousel slide">
-                                    <div class="carousel-inner">
-                                        <div class="item">
-                                            <img alt="" src="asset/img/1.jpg">
-                                            <div class="carousel-caption">
-                                                <h4>First Thumbnail label</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Ut enim ad minim veniam, quis nostrud. </p>
-                                            </div>
-
-                                        </div>
-                                        <div class="item active">
-                                            <img alt="" src="asset/img/2.jpg">
-                                            <div class="carousel-caption">
-                                                <h4>Second Thumbnail label</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Ut enim ad minim veniam, quis nostrud. </p>
-                                            </div>
-                                        </div>
-
-                                        
-                                    </div>
-
-                                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-                                    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @Html.Partial("Shared/_videoCarousel.cshtml", Model)
                     <div class="row">
                         <div class="span2">
                             <h4 class="box-title"><span class="orange-box-title">Guest</span> <span class="green-box-title">Recipes</span></h4>
@@ -218,8 +185,19 @@
                         <div class="span8">
                             <div class="box">
                                 <h4 class="box-title"><span class="orange-box-title">Facebook</span> <span class="green-box-title">Fan Page</span></h4>
+                                <div>
+                                    <iframe src="http://www.google.com/search?source=ig&rlz=&q=roland+garros+2013&oq=roland+ga&gs_l=igoogle.3.3.5j0l2j0i3j0l2j0i3j0l2j0i3.12556.14142.0.17357.9.8.0.1.1.0.80.516.8.8.0...0.0...1ac.1.12.igoogle.nEhSVNXZq50#gs_rn=16&gs_ri=psy-ab&gs_mss=aegon%20cham%202013&suggest=p&pq=aegon%20championships%202013&cp=4&gs_id=1o&xhr=t&q=roland+garros+2013&es_nrs=true&pf=p&sclient=psy-ab&oq=rola+2013&gs_l=&pbx=1&bav=on.2,or.r_qf.&bvm=bv.47534661,d.cGE&fp=37a80e3808c597d1&biw=1428&bih=423" height="500" width="500"></iframe>
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            $('iframe').contents().find("html, body").animate({ scrollTop: 250 }, { duration: 'medium', easing: 'swing' });
+                                        });
+                                    </script>
+
+                                </div>
+
+
                                 <div class="fb-like-box fb_iframe_widget" data-href="http://www.facebook.com/platform" data-width="600" data-show-faces="true" data-stream="false" data-header="true" fb-xfbml-state="rendered"><span style="height: 290px; width: 600px;">
-                                    <iframe style="display:none" id="f8deb793c" name="f29699d7cc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="http://www.facebook.com/plugins/likebox.php?api_key=231423830293736&amp;locale=en_US&amp;sdk=joey&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df7d5b138%26origin%3Dhttp%253A%252F%252Fwbpreview.com%252Ff17ae3d5bc%26domain%3Dwbpreview.com%26relation%3Dparent.parent&amp;height=290&amp;header=true&amp;show_faces=true&amp;stream=false&amp;width=600&amp;href=http%3A%2F%2Fwww.facebook.com%2Fplatform&amp;colorscheme=light&amp;show_border=true" style="border: none; overflow: hidden; height: 290px; width: 600px;"></iframe>
+@*                                    <iframe style="display:none" id="f8deb793c" name="f29699d7cc" scrolling="no" title="Facebook Social Plugin" class="fb_ltr" src="http://www.facebook.com/plugins/likebox.php?api_key=231423830293736&amp;locale=en_US&amp;sdk=joey&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D24%23cb%3Df7d5b138%26origin%3Dhttp%253A%252F%252Fwbpreview.com%252Ff17ae3d5bc%26domain%3Dwbpreview.com%26relation%3Dparent.parent&amp;height=290&amp;header=true&amp;show_faces=true&amp;stream=false&amp;width=600&amp;href=http%3A%2F%2Fwww.facebook.com%2Fplatform&amp;colorscheme=light&amp;show_border=true" style="border: none; overflow: hidden; height: 290px; width: 600px;"></iframe>*@
                                 </span></div>
                             </div>
                         </div>

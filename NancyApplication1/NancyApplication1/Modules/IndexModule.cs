@@ -39,7 +39,12 @@
 
 	            }
 
-                return View["index", viewModel].AsCacheable(DateTime.Now.AddSeconds(30));
+                //getting bing search results
+                var bing = new BingSearch();
+                viewModel.VideoResults = bing.GetVideoSearchResults();
+
+                //return View["index", viewModel].AsCacheable(DateTime.Now.AddSeconds(30));
+                return View["index", viewModel];
             };
         }
     }

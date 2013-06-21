@@ -114,7 +114,7 @@ h2.title{
 }
 
 .slider-box{
-    background-color: #8FC00C;
+    background-color: #000000;
     border: 2px solid #8AB90E;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 1px 1px 4px #CCCCCC;
@@ -333,4 +333,16 @@ ul.share-button-set li a{
 .nav li:hover
 {
     background-color:#e5e5e5;
+}
+
+.carousel-inner iframe {
+    display: block;
+    margin: auto;
+    width: 560px;
+    height: 315px;
+}
+
+.carousel-control {
+    color: #8AB90E;
+    border: 3px solid #8AB90E;
 }
