@@ -21,7 +21,8 @@ namespace TT.Web.Core
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/less.min.js",
                 "~/Scripts/moment.js",
-                "~/Scripts/main.js"
+                "~/Scripts/main.js",
+                "~/Scripts/jquery.quick.pagination.min.js"
                 );
 
             js.Transforms.Add(jsTransformer);

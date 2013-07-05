@@ -4,70 +4,6 @@
     Layout = "Shared/_layout.cshtml";
 }
 
-<div class="container" id="wrapper">
-            <div class="row">
-                <div class="span4">
-                    <div id="header">
-                        <div id="logo">
-                            <h1>
-                                <a href="index.html"><img class="logo-home" src="/Content/images/LogoColorNoText.jpeg" />Tennis Trooper</a>
-                            </h1>                           
-                        </div>
-                    </div>
-                </div>
-                <div class="span8">
-                    <div id="ads-top">
-                        <a href="#"><img src="http://placehold.it/468x60" class="pull-right"></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Start Navigation -->
-            <div class="row">
-                <div class="span12">
-                    <div class="navbar">
-                        <div class="navbar-inner">
-                            <div class="container" style="width: auto;">
-                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </a>
-                                <div class="nav-collapse">
-                                    <ul class="nav">
-                                        <li><a href="index.html"><i class="icon-home"></i> Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="categories.html">Chickens</a></li>
-                                        <li><a href="categories.html">Meats</a></li>
-                                        <li><a href="categories.html">Drinks</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Menu <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Dropdown 1</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Dropdown 2</a></li>
-
-                                            </ul>
-                                        </li>
-
-                                    </ul>
-                                    <ul class="nav  pull-right">
-                                        <li class="divider-vertical"></li>
-                                        <li>
-                                            <form action="" class="navbar-search">                                                       
-                                                <input class="search-query  span2" placeholder="type a keyword" name="q" type="text">
-                                            </form>                      
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Navigation -->
 
             <div class="row">
                 <div class="span8">
@@ -108,77 +44,7 @@
 
                         </div>
                         <div class="span6 middle-content">
-                           @Html.Partial("Shared/_currentPost.cshtml", Model)
-                            <br>
-                            <ul class="thumbnails previous-recipes">
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-4-madang.jpg">
-                                        Resep Sayuran: Ca Kailan Daging Pedas 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-5-madang.jpg">
-                                        Resep Seafood: Black Pepper Salmon dan Salad Apel 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-6-madang.jpg">
-                                        Resep Seafood: Pangsit Udang Goreng 
-                                    </a>
-
-                                </li>
-                            </ul>
-
-                            <h4 class="box-title"><span class="orange-box-title">Recipes</span> <span class="green-box-title">Collections</span></h4>
-                            <ul class="thumbnails recipes-collections">
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-7-madang.jpg">
-                                        <strong>Chicken</strong> 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-8-madang.jpg">
-                                        <strong>Meat</strong> 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-9-madang.jpg">
-                                        <strong>Cake</strong> 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-10-madang.jpg">
-                                        <strong>Drinks</strong> 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-11-madang.jpg">
-                                        <strong>Rice</strong> 
-                                    </a>
-
-                                </li>
-                                <li class="span2">
-                                    <a href="detail.html">
-                                        <img src="asset/img/thumb-12-madang.jpg">
-                                        <strong>Vegetables</strong> 
-                                    </a>
-
-                                </li>
-                            </ul>
+                            @Html.Partial("Shared/_headlines.cshtml", Model)
                         </div>
                     </div>
                     <div class="row">
@@ -186,12 +52,17 @@
                             <div class="box">
                                 <h4 class="box-title"><span class="orange-box-title">Facebook</span> <span class="green-box-title">Fan Page</span></h4>
                                 <div>
-                                    <iframe src="http://www.google.com/search?source=ig&rlz=&q=roland+garros+2013&oq=roland+ga&gs_l=igoogle.3.3.5j0l2j0i3j0l2j0i3j0l2j0i3.12556.14142.0.17357.9.8.0.1.1.0.80.516.8.8.0...0.0...1ac.1.12.igoogle.nEhSVNXZq50#gs_rn=16&gs_ri=psy-ab&gs_mss=aegon%20cham%202013&suggest=p&pq=aegon%20championships%202013&cp=4&gs_id=1o&xhr=t&q=roland+garros+2013&es_nrs=true&pf=p&sclient=psy-ab&oq=rola+2013&gs_l=&pbx=1&bav=on.2,or.r_qf.&bvm=bv.47534661,d.cGE&fp=37a80e3808c597d1&biw=1428&bih=423" height="500" width="500"></iframe>
-                                    <script type="text/javascript">
-                                        $(document).ready(function () {
-                                            $('iframe').contents().find("html, body").animate({ scrollTop: 250 }, { duration: 'medium', easing: 'swing' });
-                                        });
-                                    </script>
+
+                                <a class="twitter-timeline" href="https://twitter.com/JeffChinhere/tennis-players" data-widget-id="349356815118647296"></a>
+                                <script>
+                                    !function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                        if (!d.getElementById(id)) {
+                                            js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }
+                                    }(document, "script", "twitter-wjs");</script>
+
 
                                 </div>
 
@@ -210,7 +81,7 @@
                         <a href="galery_detail.html"><h3>Mushroom Croquette dan Country Fried Steak</h3></a>
                         <a href="#" class="btn btn-mini btn-success">Send Photo</a>
                     </div>
-                    @Html.Partial("Shared/_headlines.cshtml", Model)
+                    @Html.Partial("Shared/_currentPost.cshtml", Model)
                     <div class="box green-gradient-box tab-widget">
                         <ul class="nav nav-tabs">
                             <li class="active"><a href="#1" data-toggle="tab"><i class="icon-star"></i>&nbsp;Popular</a></li>
@@ -325,4 +196,3 @@
                     </ul>
                 </div>
             </div>
-        </div>

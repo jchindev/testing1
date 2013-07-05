@@ -1,6 +1,6 @@
 ﻿@using TT.Web.ViewModels;
 @inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
-<div class="box" ng-controller="NewsController">
+<div ng-controller="NewsController">
     <h4 class="box-title"><span class="orange-box-title">Latest</span> <span class="green-box-title">News</span></h4>
         <ul class="popular">
             <li ng-repeat="headline in headlines">
@@ -14,6 +14,11 @@
 </div>
 <script type="text/javascript">
     function NewsController($scope, $http) {
+        var quickPagination = function () {
+            $('ul.popular').quickPagination({ pageSize: "5" });
+        };
+
+
         var url = '@Model.EspnNewsURl';
         var method = "jsonp";
         if (url.indexOf('callback') < 0) {
@@ -31,6 +36,9 @@
             }
 
             $scope.headlines = data.headlines;
+
+            window.setTimeout(function () { quickPagination(); }, 200);
+
         });
 
     };

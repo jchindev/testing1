@@ -1,5 +1,6 @@
 ﻿@using TT.Web.ViewModels;
 @inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
+<div class="box">
 <div class="current-post" ng-controller="LatestPostController">
     
     <h4 class="box-title"><span class="orange-box-title">Latest</span> <span class="green-box-title">Post</span></h4>
@@ -12,8 +13,8 @@
 
     <a href="detail.html">See more posts</a>
 </div>
+</div>
 <script type="text/javascript">
-    angular.module('myApp', ['ngSanitize'])
     function LatestPostController($scope, $http) {
 
         $http.jsonp('http://localhost:45436/api/posts.asmx/GetMostRecentPost?callback=JSON_CALLBACK').success(function (data) {
