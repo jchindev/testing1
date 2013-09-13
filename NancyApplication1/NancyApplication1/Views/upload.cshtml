@@ -1,0 +1,60 @@
+﻿@using TT.Web.ViewModels;
+@inherits TT.Web.Core.TTRazorViewBase<StrokesViewModel>
+@{
+    Layout = "Shared/_layout.cshtml";
+}
+
+<form action="/strokes/upload" method="post"  enctype="multipart/form-data">
+<div class="row">
+    <div class="span10">
+        <div class="box">
+            @if (Model.IsSuccessfulUpload)
+            {
+                <p>Video successfully uploaded!  Upload another if you want.</p>
+            }
+            else
+            {
+            <p>
+                Upload your video so that you can compare it to videos of other top pros.  
+                   
+            </p>
+            }
+            <div class="fileupload fileupload-new" data-provides="fileupload">
+                <div class="input-append">
+                    <div class="uneditable-input span3">
+                        <i class="icon-file fileupload-exists"></i>
+                        <span class="fileupload-preview"></span>
+
+                    </div>
+                    <span class="btn btn-file"><span class="fileupload-new">Select file</span>
+                        <span class="fileupload-exists">Change</span>
+                        <input type="file" id="strokeVid" name="strokeVid" />
+                    </span>
+                    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                </div>
+            </div>
+            <select id="selStrokeType" name="StrokeType" class="selStroke">
+                <option value="0">Forehand</option>
+                <option value="1">Backhand</option>
+                <option value="2">Slice</option>
+                <option value="4">Serve</option>
+                <option value="3">Volley</option>
+            </select>
+            <select id="selStrokeAngle" name="StrokeAngle" class="selStroke">
+                <option value="3">Right Side</option>
+                <option value="2">Left Side</option>
+                <option value="1">Back Side</option>
+                <option value="0">Front Side</option>
+            </select>
+            <div class="submit">
+                <input type="submit" value="Submit" class="btn" />
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="span2">
+        <div class="box">
+        </div>
+    </div>
+</div>
+</form>

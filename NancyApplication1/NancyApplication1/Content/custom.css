@@ -2,3 +2,19 @@
 {
     width: 46px;
 }
+
+.fileupload
+{
+    float: left;
+}
+
+.selStroke
+{
+    float: left;
+    margin-left: 10px;
+}
+
+.clear, .submit
+{
+    clear: both;
+}

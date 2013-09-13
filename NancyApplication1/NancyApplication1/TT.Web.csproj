@@ -101,6 +101,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-fileupload.css" />
+    <Content Include="Content\bootstrap-fileupload.min.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
@@ -152,6 +154,9 @@
     </None>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\styles.css" />
+    <Content Include="favicon.png" />
+    <Content Include="Scripts\bootstrap-fileupload.js" />
+    <Content Include="Scripts\bootstrap-fileupload.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -188,6 +193,7 @@
     <Content Include="Views\Shared\_headlines.cshtml" />
     <Content Include="Views\Shared\_videoCarousel.cshtml" />
     <Content Include="Views\strokes.cshtml" />
+    <Content Include="Views\upload.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
