@@ -22,7 +22,8 @@ namespace TT.Web.Core
                 "~/Scripts/less.min.js",
                 "~/Scripts/moment.js",
                 "~/Scripts/main.js",
-                "~/Scripts/jquery.quick.pagination.min.js"
+                "~/Scripts/jquery.quick.pagination.min.js",
+                "~/Scripts/bootstrap-fileupload.min.js"
                 );
 
             js.Transforms.Add(jsTransformer);
@@ -33,7 +34,8 @@ namespace TT.Web.Core
             var css = new StyleBundle("~/bundles/css").Include(
                  "~/Content/less/bootstrap.less",
                 "~/Content/styles.css",
-                "~/Content/custom.css"
+                "~/Content/custom.css",
+                "~/Content/bootstrap-fileupload.min.css"
                 );
             css.Transforms.Add(cssTransformer);
             css.Orderer = nullOrderer;

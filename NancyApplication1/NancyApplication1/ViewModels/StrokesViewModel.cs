@@ -8,6 +8,7 @@ namespace TT.Web.ViewModels
 {
     public class StrokesViewModel : BaseViewModel
     {
+        public bool IsSuccessfulUpload { get; set; }
         public string UserStrokeUrl { get; set; }
         public string ProfessionStrokeUrl { get; set; }
     }
