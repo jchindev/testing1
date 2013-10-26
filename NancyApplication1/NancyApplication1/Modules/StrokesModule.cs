@@ -33,6 +33,8 @@
             {
                 var viewModel = new StrokesViewModel();
 
+                viewModel.UserStrokeUrl = "https://tennisvids.blob.core.windows.net/serves/WP_20130706_003.mp4";
+
                 return View["strokes", viewModel];
             };
         }

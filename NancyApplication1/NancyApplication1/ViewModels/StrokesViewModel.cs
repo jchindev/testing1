@@ -8,5 +8,7 @@ namespace TT.Web.ViewModels
 {
     public class StrokesViewModel : BaseViewModel
     {
+        public string UserStrokeUrl { get; set; }
+        public string ProfessionStrokeUrl { get; set; }
     }
 }

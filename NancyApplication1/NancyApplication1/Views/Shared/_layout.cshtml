@@ -10,6 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.js"></script>
 
+    <link href="http://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.1/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "/Scripts/video-js.swf";
+    </script>
+
     @RenderSection("Header", false)
 </head>
 <body>

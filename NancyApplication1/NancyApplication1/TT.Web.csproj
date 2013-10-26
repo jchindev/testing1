@@ -152,6 +152,8 @@
     </None>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\styles.css" />
+    <Content Include="Content\video-js.css" />
+    <Content Include="Content\video-js.min.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -161,6 +163,9 @@
     <Content Include="Scripts\main.js" />
     <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\video-js.swf" />
+    <Content Include="Scripts\video.dev.js" />
+    <Content Include="Scripts\video.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -188,6 +193,7 @@
     <Content Include="Views\Shared\_headlines.cshtml" />
     <Content Include="Views\Shared\_videoCarousel.cshtml" />
     <Content Include="Views\strokes.cshtml" />
+    <Content Include="Views\Shared\_videoCompare.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

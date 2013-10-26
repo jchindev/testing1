@@ -1,5 +1,5 @@
 ﻿@using TT.Web.ViewModels;
-@inherits TT.Web.Core.TTRazorViewBase<IndexViewModel>
+@inherits TT.Web.Core.TTRazorViewBase<StrokesViewModel>
 @{
     Layout = "Shared/_layout.cshtml";
 }
@@ -7,6 +7,7 @@
 <div class="row">
     <div class="span8">
         <div class="box">
+            @Html.Partial("Shared/_videoCompare.cshtml", Model)
         </div>
     </div>
     <div class="span4">
